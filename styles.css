@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Rubik+Glitch&display=swap');
+body {
+    background-color: rgba(23, 26, 48, 0.823);
+    align-items: center;
+}
+
+#boardGame, #info {
+    max-width: 500px;
+}
+
+#boardGame {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#boardScore {
+    font-family: "Pixelify Sans", sans-serif;
+    color: aliceblue;
+}
+
+#start {
+    border: none;
+    padding:  5px 10px;
+    margin: 10px;
+    width: auto;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#start:hover {
+    font-size: 15px;
+}
+
+#start, #reason {
+    color: aliceblue;
+    background: rgba(162, 20, 20, 0.837);
+}
+#gameO {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(162, 20, 20, 0.837);
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #reason {
+    padding: 10px;
+    font-size: small;
+    width: 300px;
+  }
+
+  .square {
+    aspect-ratio: 1;
+  }
+
+  .emptySquare {
+    background-color: rgb(41, 37, 48);
+  }
+
+  .snakeSquare {
+    background-color: rgb(149, 196, 126);
+  }
+
+  .foodSquare {
+    background-color: rgb(223, 62, 111);
+  }
